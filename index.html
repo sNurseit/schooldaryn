@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Отправка формы на почту </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+    	form {
+        background: #FAFAFA;
+        box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.22), 0px 19px 38px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        padding-bottom: 85px;
+      }
+      footer {
+        background-color: #31292B;
+        height: 220px;
+      }
+
+      .fl {
+        height: 90px;
+      }
+
+      .text_footer{
+        color: white;
+        margin-top: 35px;
+        text-align: center;
+      }
+
+      .icons {
+        padding:25px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image-icon {
+        height: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      		<form action="mail.php" method="POST" enctype="multipart/form-data">
+            <legend>М.Қалмырза атындағы №3 мамандандырылған мектеп-интернаты 7-сыныпқа документ қабылдау</legend>
+            
+            <div class="row first">
+      
+              <div class="form-group col-sm-4">
+      				  <label for="">Оқушының есімі</label>
+      				  <input type="text" class="form-control" id="" name="user_name" placeholder="Олжас">
+              </div>
+              
+              <div class="form-group col-sm-4">
+      				  <label for="">Оқушының тегі</label>
+      				  <input type="text" class="form-control" id="" name="user_second_name" required placeholder="Ерғалиев">
+              </div>
+              
+              <div class="form-group col-sm-4">
+      				  <label for="">Оқушының ЖСН-і</label>
+      				  <input type="number" class="form-control" id="" name="user_IIN" required placeholder="021205450978">
+      			  </div>
+      		
+            </div>
+            <hr>
+            
+            <div class="row">
+              
+              <div class="form-group col-sm-4">
+                <label for="">Ата-ананың телефон номері</label>
+                <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+              </div>
+
+              <div class="form-group col-sm-4">
+                <label for="">Электронды почта</label>
+                <input type="email" class="form-control" id="" name="user_email" placeholder="olhzas.ergaiev@gmail.com">
+              </div>
+
+              
+            </div>
+            <hr>
+      			<div class="form-group">
+      				<label for="">3х4 сурет</label>
+      				<input type="file" id="" name="upload" placeholder="mail@mail.ru">
+            </div>
+            <hr>
+            
+            <div class="form-group">
+      				<label for="">ЖСН көрсетілген туу туралы  куәлік суреті сурет</label>
+      				<input type="file" id="" name="upload2" placeholder="mail@mail.ru">
+      			</div>
+            <hr>
+          
+            <div class="form-group">
+              <label for="">Баланың ата-анасынан немесе өзге заңды өкілінен өтініш</label>
+              <input type="file" id="" name="upload3" placeholder="mail@mail.ru">
+            </div>
+            <hr>
+
+            <div class="form-group">
+              <label for="">Үміткердің электрондық мекен-жайын көрсете отырып, үміткердің оқу орнынан ұйымның мөрімен расталған фотосуреті бар анықтамасы;
+              </label>
+              <input type="file" id="" name="upload4" placeholder="mail@mail.ru">
+            </div>
+            <hr>
+
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
+          </form>
+          
+          <div class="container fl">
+
+          </div>
+
+
+    </div><!-- /.container -->
+
+    <footer>
+      <div class="container">
+        <h5 class="text_footer">Мекен-жайы: Шардара қаласы Бауыржан Момышұлы көшесі 27 </h5>
+      
+      <div class="row icons">
+        <div class="col-sm-1 ">
+          <a href="https://www.instagram.com/shardara_daryn/"><img src="img/instagram-social-network-logo-of-photo-camera 1.png" class="image-icon" alt=""> </a>
+        </div>
+        <div class="col-sm-1">
+          <a href="https://ru-ru.facebook.com/pages/category/School/%D0%A8%D0%B0%D1%80%D0%B4%D0%B0%D1%80%D0%B0-%D0%94%D0%B0%D1%80%D1%8B%D0%BD-1120948751317091/"><img src="img/facebook-logo 1.png" alt="" class="image-icon"></a>
+        </div>
+        <div class="col-sm-1">
+          <a href="https://vk.com/club186455675"><img src="img/vk-social-logotype 1.png" alt="" class="image-icon"> </a>
+        </div>
+      </div>
+      <div class="row">
+        <h5 class="text_footer">+7(777)-777-77-77 </h5>
+      </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+	
